@@ -7,3 +7,4 @@ import ConfirmationController from "./controllers/confirmation_controller";
 
 export const application = Application.start(document.documentElement);
 application.register("confirmation", ConfirmationController);
+import "controllers"
