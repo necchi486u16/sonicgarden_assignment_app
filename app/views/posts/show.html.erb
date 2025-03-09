@@ -1,10 +1,12 @@
+<div class="show-tweet">
 <% flash.each do |key, message| %>
     <div class="flash <%= key %>"><%= message %></div>
   <% end %>
 
-<p><%= @post.body %></p>
+<p class="post-body"><%= @post.body %></p>
 
-<%= link_to "編集", edit_post_path %>
+<%= button_to "編集", edit_post_path(@post), method: :get, class: "show-button" %>
 
-<%= button_to "削除", post_path(@post), method: :delete, data: { turbo: false, confirm: "本当によろしいですか？" } %>
+<%= button_to "削除", post_path(@post), method: :delete, form: { data: { turbo_confirm: "本当によろしいですか？" } }, class: "show-button" %>
 
+</div>

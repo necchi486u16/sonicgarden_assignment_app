@@ -11,8 +11,8 @@
 
 <ul>
 <%= form_with model: @post do |form| %>
-  <li><%= form.text_area :body, placeholder: "何をしていますか？" %></li>
-  <li><%= form.submit "ツイートする" %></li>
+  <li><%= form.text_area :body, placeholder: "何をしていますか？", class: "textarea" %></li>
+  <li><%= form.submit "ツイートする", class: "tweet-button" %></li>
 <% end %>
 </ul>
 </div>

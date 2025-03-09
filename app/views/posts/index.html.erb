@@ -2,13 +2,16 @@
     <div class="flash <%= key %>"><%= message %></div>
   <% end %>
   
-
-<h1>帰ってきたTwitter</h1>
-<%= link_to "ツイート", "posts/new" %>
+<div class="index">
+<%= button_to "ツイート", "posts/new", method: :get, class: "tweet-button" %>
 
 <ul>
 <% @posts.each do |post| %>
+<div style="padding: 10px; margin-bottom: 10px; border: 1px solid #333333; border-radius: 10px;">
 <li><%= post.body %></li>
 <li><%= link_to "詳細", post_path(post.id) %></li>
+</div>
 <% end %>
 </ul>
+
+</div>

@@ -25,3 +25,64 @@ ul {
     padding-right: 80px;
 }
 
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.header-space {
+    background-color: #63d3fc;
+    font-size: 24px;
+    padding: 10px 0px 10px 0px;
+}
+
+.header {
+  text-decoration: none; /* 下線を消す */
+  color:ghostwhite; 
+  font-size: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 80px; /* 左側に80pxの余白を追加 */
+}
+
+.index {
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.show-tweet {
+    padding-left: 80px;
+}
+
+.edit-tweet {
+    padding-left: 80px;
+}
+
+.textarea {
+    height: 200px;
+    width: 400px;
+}
+
+.show-button {
+    background: none; /* 背景色をなくす */
+    border: none; /* ボーダーをなくす */
+    font-size: 16px;
+    color: blue; /* テキスト色を青に設定 */
+    text-decoration: underline; /* 下線を追加 */
+    cursor: pointer; /* カーソルをポインターに変更 */
+    padding: 0; /* 内側の余白をなくす */
+}
+
+.flash {
+    padding-left: 80px;
+    color:rgb(136, 225, 3);
+}
+
+.tweet-button {
+    background-color: dodgerblue;
+    color:white;
+    border: none;
+    margin-top: 16px;
+    font-size: 24px;
+    border-radius: 5px;
+}
