@@ -1,4 +1,4 @@
 デモ動画
 
-Uploading 画面収録 2025-03-10 8.01.07.mov…
+https://github.com/user-attachments/assets/c4856dbd-d9b5-4390-be5a-0924f95969ca
 
