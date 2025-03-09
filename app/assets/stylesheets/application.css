@@ -13,3 +13,15 @@
  *= require_tree .
  *= require_self
  */
+
+
+ul {
+    list-style-type: none; /* ドットを消す */
+    padding: 0px;
+}
+
+.new-tweet {
+    padding-left: 80px;
+    padding-right: 80px;
+}
+

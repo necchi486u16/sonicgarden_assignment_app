@@ -1,2 +1,14 @@
+<% flash.each do |key, message| %>
+    <div class="flash <%= key %>"><%= message %></div>
+  <% end %>
+  
+
 <h1>帰ってきたTwitter</h1>
 <%= link_to "ツイート", "posts/new" %>
+
+<ul>
+<% @posts.each do |post| %>
+<li><%= post.body %></li>
+<li><%= link_to "詳細", post_path(post.id) %></li>
+<% end %>
+</ul>

@@ -1,0 +1,10 @@
+<% flash.each do |key, message| %>
+    <div class="flash <%= key %>"><%= message %></div>
+  <% end %>
+
+<p><%= @post.body %></p>
+
+<%= link_to "編集", edit_post_path %>
+
+<%= button_to "削除", post_path(@post), method: :delete, data: { turbo: false, confirm: "本当によろしいですか？" } %>
+
